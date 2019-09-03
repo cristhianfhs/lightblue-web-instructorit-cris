@@ -9,11 +9,9 @@ var session = require('express-session');
 
 var index = require('./routes/index');
 var images = require('./routes/images');
-<<<<<<< HEAD
-=======
+
 var catalog = require('./routes/catalog');
 var customer = require('./routes/customer');
->>>>>>> 1f67a71392d95e0b195716cea562a46369926f73
 
 var app = express();
 
@@ -28,14 +26,13 @@ app.use('/', index);
 app.use('/', express.static('public/resources'));
 app.use('/', express.static('public/stylesheets'));
 app.use('/bower_components', express.static('bower_components'));
-<<<<<<< HEAD
+
 app.use('/image', express.static('public/images'));
-=======
+
 app.use('/image', express.static('public/image'));
 app.use('/catalog', catalog);
 app.use('/customer', customer);
 app.use('/images', images);
->>>>>>> 1f67a71392d95e0b195716cea562a46369926f73
 
 app.use(express.static(path.join(__dirname, 'public')));
 
