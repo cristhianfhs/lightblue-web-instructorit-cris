@@ -1,4 +1,12 @@
 {
   "APIs": {
+  	"catalog": {
+    "host": "lightblue-catalog-chernandezinstructoritcom.mybluemix.net",
+    "base_path": "/micro"
+  },
+  "customer": {
+    "host": "lightblue-customer-chernandezinstructoritcom.mybluemix.net",
+    "base_path": "/micro"
+  }
   }
 }
